@@ -2,7 +2,7 @@ const express = require("express");
 const expressGraphql = require("express-graphql");
 const { buildSchema } = require("graphql");
 const admin = require("firebase-admin");
-const serviceAccount = require("./config/serviceAccount.config.js");
+const serviceAccount = require("./config/serviceAccount.config");
 const cors = require('cors'); 
 require("dotenv").config();
 
@@ -28,6 +28,7 @@ const schema = buildSchema(`
         searchString: String
         location: String
         userId: String
+        radius: Int
     }
     
 `);
@@ -47,6 +48,7 @@ const get = (args: any) => {
             searchString: values.searchString,
             location: values.location,
             userId: values.userId,
+            radius: values.radius,
           });
         }
       });
