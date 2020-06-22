@@ -1,0 +1,44 @@
+{
+  "name": "enye-react-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "12.16.x"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "start": "tsc && node ./build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamilr/Enye-React-Challenge.git"
+  },
+  "keywords": [
+    "schema",
+    "covid-19",
+    "graphql",
+    "firebase",
+    "react"
+  ],
+  "author": "mohammed ibrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mohamilr/Enye-React-Challenge/issues"
+  },
+  "homepage": "https://github.com/Mohamilr/Enye-React-Challenge#readme",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "firebase-admin": "^8.12.1",
+    "graphql": "^15.1.0",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
