@@ -2,7 +2,7 @@ const express = require("express");
 const expressGraphql = require("express-graphql");
 const { buildSchema } = require("graphql");
 const admin = require("firebase-admin");
-const serviceAccount = require("./config/serviceAccount.config");
+const serviceAccount = require("./config/serviceAccount.config.js");
 const cors = require('cors'); 
 require("dotenv").config();
 
