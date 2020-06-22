@@ -28,6 +28,7 @@ const schema = buildSchema(`
         searchString: String
         location: String
         userId: String
+        radius: Int
     }
     
 `);
@@ -47,6 +48,7 @@ const get = (args: any) => {
             searchString: values.searchString,
             location: values.location,
             userId: values.userId,
+            radius: values.radius,
           });
         }
       });
