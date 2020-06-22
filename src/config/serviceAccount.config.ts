@@ -1,5 +1,3 @@
-const e = require('express');
-
 require ('dotenv').config();
 const env = process.env;
 
